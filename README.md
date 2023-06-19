@@ -10,7 +10,7 @@ To get started, clone this repository to your local machine. Each session is org
 
 Here's an overview of the sessions and milestones covered:
 
-- Session 1: Getting Started with Backend (Node)
+- [Session 1: Getting Started with Backend (Node)](./Session%201%20-%20Getting%20Started%20with%20Backend%20(Node))
 - Session 2: Backend Setup and creating a mini server using Express
 - Session 3: Creating RESTful APIs and Introduction to Databases and database tools
 - Session 4: API using MySQL and MongoDB
