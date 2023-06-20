@@ -4,6 +4,73 @@
     <img src="./session-1.svg" alt="Session 1" />
 </p>
 
+## Installing Node.js
+
+Visit https://nodejs.org/en and download the compatible version for Windows. 
+
+For Linux/Mac OS visit and follow the instructions mentioned at https://github.com/nodesource/distributions.
+
+## Checking if Node.js is Installed
+
+Run the following commands to check if you've successfully installed Node.js or not.
+
+```bash
+node -v
+```
+
+```bash
+node --version
+```
+
+## Work with Node.js in Your Terminal directly
+
+```bash
+node
+```
+
+## Run a JavaScript file using  Node.
+
+- Create a file called `index.js` and add any JS-related code. Eg: `console.log('Hello there!');`
+- Open the terminal in the same directory as the `index.js` file.
+- Run the following command to execute the `index.js` file.
+
+```bash
+node index.js
+```
+
+- The output in your terminal should be:
+
+```bash
+Hello there!
+```
+
+## WebAPIs are not accessible in Node.js Environment!
+
+```javascript
+console.log("hello, world!")
+
+const a = 10;
+const b = 20;
+
+console.log(a + b);
+
+try {
+    const element = document.querySelector('#box');
+} catch (error) {
+    console.log('Not in browser!')
+}
+```
+
+The output of the above code will be:
+
+```bash
+hello, world!
+30
+Not in browser!
+```
+
+This is because Node.js is a runtime environment OUTSIDE of your browser! Access to the web apps does not exist simply because they're not part of the system.
+
 ## Resources Used
 
 1. [JavaScript Execution Context – How JS Works Behind The Scenes](https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/)
