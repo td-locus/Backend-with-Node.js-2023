@@ -1,0 +1,49 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "6YAWSx6CVjA7CDAaoprE6",
+      "type": "text",
+      "x": 700,
+      "y": 400,
+      "width": 476.243896484375,
+      "height": 135,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 904590197,
+      "version": 66,
+      "versionNonce": 902514229,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1688614429741,
+      "link": null,
+      "locked": false,
+      "text": "REST API Project Using \nMySQL & Introduction To \nTemplating",
+      "fontSize": 36,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "baseline": 122,
+      "containerId": null,
+      "originalText": "REST API Project Using \nMySQL & Introduction To \nTemplating",
+      "lineHeight": 1.25,
+      "isFrameName": false
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
