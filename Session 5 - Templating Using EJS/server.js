@@ -1,10 +1,11 @@
 // Dependencies
 const express = require('express');
-const Student = require('./Student');
 const connection = require('./utils/database');
 
 // Initializing Application
 const app = express();
+
+app.set('view engine', 'ejs')
 
 function reqLogger(req, res, next) {
     console.log(`${req.method}: ${req.url}`);
@@ -18,63 +19,79 @@ app.use(reqLogger)
 
 // Student Management REST API
 
-const students = [];
-
 // Create a Student
 
-app.post('/api/students', (req, res) => {
-    const { name, regNo, dept } = req.body;
-    const newStudent = new Student(name, dept, regNo);
-    students.push(newStudent);
-    return res.status(201).json({ message: 'New Student Created' });
+app.post('/api/students', async (req, res) => {
+    try {
+        const { name, regNo, dept } = req.body;
+        const response = await connection.promise().query(`INSERT INTO students (name, dept, reg_no) VALUES ('${name}', '${dept}', '${regNo}')`);
+        return res.status(201).json({ message: 'New Student Created' });
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
 });
 
 // Read all students
 
-app.get('/api/students', (req, res) => {
-    return res.status(200).json({
-        message: 'All student details fetched',
-        students
-    })
+app.get('/api/students', async (req, res) => {
+    try {
+        const [rows] = await connection.promise().query('SELECT * FROM students')
+        return res.status(200).json({
+            message: 'All student details fetched',
+            students: rows
+        })
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
 });
 
 // Read a student by regNo
 
-app.get('/api/students/:regNo', (req, res) => {
-    const { regNo } = req.params;
-    const student = students.find((ele) => ele.regNo === regNo);
-    if (student) {
-        return res.status(200).json({ message: 'Student found', student });
+app.get('/api/students/:regNo', async (req, res) => {
+    try {
+        const { regNo } = req.params;
+        const [rows] = await connection.promise().query(`SELECT * FROM students WHERE reg_no='${regNo}'`);
+        if (rows.length > 0 && rows[0]) {
+            return res.render('student', { ...rows[0] })
+        }
+        return res.status(404).json({ message: 'Student with give regNo does not exist' });
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Internal server error' });
     }
-    return res.status(404).json({ message: 'Student with give regNo does not exist' });
 });
 
 // Update Student Details
 
-app.patch('/api/student/:regNo/name', (req, res) => {
-    const { regNo, name } = req.params;
-    students.forEach((student) => {
-        if (student.regNo === regNo) {
-            student.name = name;
-        }
-    });
-    return res.status(200).json({ message: 'Student updated' });
+app.patch('/api/students/:regNo/name', async (req, res) => {
+    try {
+        const { regNo } = req.params;
+        const { name } = req.body
+        const response = await connection.promise().query(`UPDATE students SET name='${name}' WHERE reg_no='${regNo}'`)
+        return res.status(200).json({ message: 'Student updated' });
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
 });
 
 // Delete A student
 
-app.delete('/api/student/:regNo', (req, res) => {
-    const { regNo, name } = req.params;
-    const position = students.findIndex((ele) => ele.regNo === regNo);
-    if (position > -1) {
-        students.splice(position, 1);
-        return res.status(200).json({ message: 'Student deleted' });
+app.delete('/api/students/:regNo', async (req, res) => {
+    try {
+        const { regNo } = req.params;
+        const response = await connection.promise().query(`DELETE FROM students WHERE reg_no='${regNo}'`)
+        return res.json({ message: 'Student Deleted' })
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Internal server error' });
     }
-    return res.status(404).json({ message: 'Student with give regNo does not exist' })
 });
 
 
-connection.promise().connect().then(() => {
+connection.promise().connect().then(() => { // handshake
     console.log('✅ Connected to Database.')
     app.listen(5000, () => {
         console.log('✅ Server running on http://localhost:5000.')
