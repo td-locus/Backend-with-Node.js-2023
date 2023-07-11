@@ -1,5 +1,9 @@
 # Session 6 - Authentication & Authorization
 
+<p align="center">
+    <img src="./session-6.svg" alt="session 6" />
+</p>
+
 ## Introduction
 
 - Explanation of the session's objectives and the importance of authentication and authorization in web applications.
