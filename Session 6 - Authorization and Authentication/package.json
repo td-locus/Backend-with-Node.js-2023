@@ -1,0 +1,21 @@
+{
+	"name": "session-6---authorization-and-authentication",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon server.js",
+		"start": "node server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"ejs": "^3.1.9",
+		"express": "^4.18.2",
+		"mysql2": "^3.5.1"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.1"
+	}
+}

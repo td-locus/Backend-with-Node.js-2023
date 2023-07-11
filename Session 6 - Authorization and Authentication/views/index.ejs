@@ -1,0 +1,35 @@
+<%- include('./partials/header.ejs') %>
+<main class="w-full h-screen flex flex-col items-center justify-center">
+	<h1 class="text-2xl font-semibold">Create A new Student</h1>
+	<form
+		action="/api/students"
+		method="post"
+		class="flex flex-col mt-4 items-center justify-center rounded-md border-2 border-slate-500 p-4 gap-8"
+	>
+		<input
+			type="text"
+			name="name"
+			placeholder="Name"
+			class="border border-slate-500 rounded px-2 py-1"
+		/>
+		<input
+			type="text"
+			name="regNo"
+			placeholder="Register Number"
+			class="border border-slate-500 rounded px-2 py-1"
+		/>
+		<input
+			type="text"
+			name="dept"
+			placeholder="Department"
+			class="border border-slate-500 rounded px-2 py-1"
+		/>
+		<button
+			type="submit"
+			class="rounded w-full bg-slate-500/60 px-2 py-1 transition-all duration-300 hover:bg-slate-500 text-white"
+		>
+			Create
+		</button>
+	</form>
+</main>
+<%- include('./partials/footer.ejs') %>

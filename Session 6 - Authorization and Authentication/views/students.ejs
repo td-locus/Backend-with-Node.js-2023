@@ -1,0 +1,22 @@
+<%- include('./partials/header.ejs') %>
+<main class="w-full min-h-screen flex flex-col items-center justify-center">
+	<% if (students.length > 0) { %> <% students.forEach(student => { %>
+	<a
+		href="/students/<%=student.reg_no%>"
+		class="border border-slate-500 p-4 rounded-md mt-4 text-justify transition-all hover:bg-slate-500 bg-slate-500/60 text-white hover:shadow-md hover:-translate-y-1"
+	>
+		<p class="flex"><b class="mr-auto">Name:</b> <%= student.name %></p>
+		<p class="flex">
+			<b class="mr-auto">Register No:</b> <%= student.reg_no %>
+		</p>
+		<p class="flex">
+			<b class="mr-auto">Department:</b> <%= student.dept %>
+		</p>
+	</a>
+	<% }) %> <% } else { %>
+	<h2 class="text-3xl font-semibold">
+		No Students added yet! Create one to get started
+	</h2>
+	<% } %>
+</main>
+<%- include('./partials/footer.ejs') %>

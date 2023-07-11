@@ -1,0 +1,49 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "VM5Fzi80WJ7v1yA1FlH_d",
+      "type": "text",
+      "x": 520,
+      "y": 300,
+      "width": 586.3678588867188,
+      "height": 90,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 612508946,
+      "version": 39,
+      "versionNonce": 778639886,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1688896203193,
+      "link": null,
+      "locked": false,
+      "text": "Implementing Security\nAuthorization and Authentication",
+      "fontSize": 36,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "baseline": 76,
+      "containerId": null,
+      "originalText": "Implementing Security\nAuthorization and Authentication",
+      "lineHeight": 1.25,
+      "isFrameName": false
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
