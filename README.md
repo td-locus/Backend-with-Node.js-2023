@@ -15,7 +15,7 @@ Here's an overview of the sessions and milestones covered:
 - [Session 3: Creating RESTful APIs and Introduction to Databases and database tools](./Session%203%20-%20Creating%20RESTful%20APIs%20and%20Introduction%20to%20Databases%20and%20database%20tools)
 - [Session 4: API using MySQL and MongoDB](./Session%204%20-%20API%20using%20MySQL%20and%20MongoDB)
 - [Session 5: Templating Using EJS](./Session%205%20-%20Templating%20Using%20EJS)
-- Session 6: Authorization and Authentication
+- [Session 6: Authorization and Authentication](./Session%206%20-%20Authorization%20and%20Authentication)
 - Session 7: Sending Emails Using Node.js
 - Session 8: Production and Deployment of Backend Applications
 
