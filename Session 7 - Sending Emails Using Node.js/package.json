@@ -1,0 +1,20 @@
+{
+	"name": "session-7---sending-emails-using-node",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon index.js",
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Kunal at TD",
+	"license": "ISC",
+	"devDependencies": {
+		"nodemon": "^3.0.1"
+	},
+	"dependencies": {
+		"dotenv": "^16.3.1",
+		"nodemailer": "^6.9.4"
+	}
+}
