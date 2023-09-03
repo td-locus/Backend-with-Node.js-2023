@@ -16,10 +16,56 @@ Here's an overview of the sessions and milestones covered:
 - [Session 4: API using MySQL and MongoDB](./Session%204%20-%20API%20using%20MySQL%20and%20MongoDB)
 - [Session 5: Templating Using EJS](./Session%205%20-%20Templating%20Using%20EJS)
 - [Session 6: Authorization and Authentication](./Session%206%20-%20Authorization%20and%20Authentication)
-- Session 7: Sending Emails Using Node.js
+- [Session 7: Sending Emails Using Node.js](./Session%207%20-%20Sending%20Emails%20Using%20Node.js)
 - Session 8: Production and Deployment of Backend Applications
 
 Feel free to dive into any session that interests you and start learning!
+
+## How to Use ".excalidraw" Files
+
+To visualize and work with `.excalidraw` files for each session, follow these steps:
+
+1. **Visit the Excalidraw Website**
+
+   Open your web browser and go to the [Excalidraw website](https://excalidraw.com/).
+
+2. **Access the Options Menu**
+
+   Once you're on the Excalidraw website, look for the options menu. It's usually located in the top-right corner of the screen.
+
+3. **Open the Options Menu**
+
+   Click on the options menu to reveal a dropdown list of actions and settings.
+
+4. **Select "Open"**
+
+   From the options menu, select "Open." This action will prompt you to choose a file from your local device.
+
+5. **Locate the `.excalidraw` File**
+
+   Navigate to the session folder where you have the specific `.excalidraw` file you want to work with. Click on the file to select it.
+
+6. **Open the File**
+
+   After selecting the `.excalidraw` file, click the "Open" or "Upload" button (the label may vary depending on your browser). This will load the selected `.excalidraw` file into the Excalidraw editor.
+
+7. **Start Editing**
+
+   You can now interact with and edit the content of the `.excalidraw` file using the Excalidraw editor. Make any necessary annotations, additions, or modifications as required for your session.
+
+8. **Save Your Changes**
+
+   After making changes, you can save your updated `.excalidraw` file by using the "File" menu within the Excalidraw editor. Select "Save" or "Save As" to save your changes locally.
+
+9. **Export If Needed**
+
+   If you want to share or export your modified `.excalidraw` file, you can do so by using the "File" menu within the Excalidraw editor. Choose the "Export" option to save it in your desired format.
+
+10. **Continue Collaboration**
+
+    `.excalidraw` files are easy to share and collaborate on. You can save your edited file and share it with your team or peers for further collaboration.
+
+This simple guide will help you open, edit, and work with `.excalidraw` files for each session using the Excalidraw web application. Enjoy visualizing and collaborating on your session content!
 
 ## Contributions
 
