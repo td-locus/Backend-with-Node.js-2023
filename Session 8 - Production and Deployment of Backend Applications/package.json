@@ -1,0 +1,23 @@
+{
+	"name": "session-8---production-and-deployment-of-backend-applications",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"author": "Kunal at TD",
+	"license": "ISC",
+	"dependencies": {
+		"cookie-parser": "^1.4.6",
+		"dotenv": "^16.3.1",
+		"ejs": "^3.1.9",
+		"express": "^4.18.2",
+		"mysql2": "^3.6.0",
+		"nodemailer": "^6.9.4"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.1"
+	}
+}
