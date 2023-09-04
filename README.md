@@ -17,7 +17,7 @@ Here's an overview of the sessions and milestones covered:
 - [Session 5: Templating Using EJS](./Session%205%20-%20Templating%20Using%20EJS)
 - [Session 6: Authorization and Authentication](./Session%206%20-%20Authorization%20and%20Authentication)
 - [Session 7: Sending Emails Using Node.js](./Session%207%20-%20Sending%20Emails%20Using%20Node.js)
-- Session 8: Production and Deployment of Backend Applications
+- [Session 8: Production and Deployment of Backend Applications](./Session%208%20-%20Production%20and%20Deployment%20of%20Backend%20Applications)
 
 Feel free to dive into any session that interests you and start learning!
 
