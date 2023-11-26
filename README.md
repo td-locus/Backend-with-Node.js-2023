@@ -65,8 +65,6 @@ To visualize and work with `.excalidraw` files for each session, follow these st
 
     `.excalidraw` files are easy to share and collaborate on. You can save your edited file and share it with your team or peers for further collaboration.
 
-This simple guide will help you open, edit, and work with `.excalidraw` files for each session using the Excalidraw web application. Enjoy visualizing and collaborating on your session content!
-
 ## Contributions
 
 We welcome contributions from the community to improve and enhance this project. If you have any suggestions, bug fixes, or new features to add, please refer to the [contributing guidelines](CONTRIBUTING.md) for instructions on how to contribute.
